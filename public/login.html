@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로그인 · OLIVE YOUNG</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="center-wrap">
+    <div class="card">
+      <h1>OLIVE YOUNG</h1>
+      <form id="login-form">
+        <div class="field">
+          <input type="email" id="email" placeholder="이메일" autocomplete="username" required />
+        </div>
+        <div class="field">
+          <input type="password" id="password" placeholder="비밀번호" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn btn-lime">로그인</button>
+      </form>
+      <div class="msg" id="msg"></div>
+      <div class="form-foot">아직 회원이 아닌가요? <a href="/register.html">회원가입</a></div>
+    </div>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const msg = document.getElementById('msg');
+      msg.textContent = '';
+      try {
+        await api('/api/auth/login', {
+          method: 'POST',
+          body: {
+            email: document.getElementById('email').value.trim(),
+            password: document.getElementById('password').value,
+          },
+        });
+        location.href = '/';
+      } catch (err) {
+        msg.className = 'msg error';
+        msg.textContent = err.message;
+      }
+    });
+  </script>
+</body>
+</html>

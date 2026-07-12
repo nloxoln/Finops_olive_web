@@ -1,0 +1,101 @@
+﻿id,brand_name,category_name,name,price,stock_quantity,thumbnail_url,description
+1,구달,스킨케어,청귤 비타C 잡티 케어 세럼 30ml 기획,24000,94,https://images.oliveyoung.co.kr/products/real_1.jpg,구달의 베스트셀러 잡티 케어 세럼
+2,토리든,스킨케어,다이브인 저분자 히알루론산 수분크림 80ml,21000,63,https://images.oliveyoung.co.kr/products/real_2.jpg,속건조를 잡아주는 촉촉한 수분크림
+3,메디힐,스킨케어,티트리 에센셜 마스크 10매,20000,84,https://images.oliveyoung.co.kr/products/real_3.jpg,피부 진정에 탁월한 국민 마스크팩
+4,아누아,스킨케어,어성초 77 수딩 토너 250ml,23000,42,https://images.oliveyoung.co.kr/products/real_4.jpg,민감성 피부를 위한 진정 토너
+5,라운드랩,스킨케어,독도 토너 500ml 대용량,30000,92,https://images.oliveyoung.co.kr/products/real_5.jpg,자극 없이 각질을 케어하는 수분 토너
+6,라운드랩,스킨케어,자작나무 수분 선크림 SPF50+ 50ml 1+1,25000,79,https://images.oliveyoung.co.kr/products/real_6.jpg,촉촉하게 스며드는 수분 선크림
+7,에스트라,스킨케어,아토베리어365 크림 80ml 기획,31000,71,https://images.oliveyoung.co.kr/products/real_7.jpg,피부 장벽을 강화하는 보습 크림
+8,아이소이,스킨케어,블레미쉬 케어 업 세럼 (잡티세럼) 35ml,29500,124,https://images.oliveyoung.co.kr/products/real_8.jpg,"올리브영 1위 에센스, 불가리안 로즈 세럼"
+9,닥터지,스킨케어,레드 블레미쉬 클리어 수딩 크림 70ml,28000,22,https://images.oliveyoung.co.kr/products/real_9.jpg,여드름성 피부도 안심하고 쓰는 진정 크림
+10,피지오겔,스킨케어,데일리 모이스처 테라피 페이셜 크림 150ml,33000,75,https://images.oliveyoung.co.kr/products/real_10.jpg,72시간 지속되는 보습력의 정석
+11,바이오더마,스킨케어,센시비오 H2O 클렌징 워터 500ml,27000,111,https://images.oliveyoung.co.kr/products/real_11.jpg,자극 없이 완벽하게 지워지는 클렌징 워터
+12,마녀공장,스킨케어,퓨어 클렌징 오일 200ml,19900,150,https://images.oliveyoung.co.kr/products/real_12.jpg,블랙헤드까지 케어하는 자연유래 클렌징 오일
+13,스킨푸드,스킨케어,캐롯 카로틴 카밍 워터 패드 (당근패드),26000,130,https://images.oliveyoung.co.kr/products/real_13.jpg,무너진 피부 장벽을 진정시키는 당근패드
+14,성분에디터,스킨케어,그린토마토 모공앰플 플러스 30ml,22000,20,https://images.oliveyoung.co.kr/products/real_14.jpg,세로모공을 쫀쫀하게 잡아주는 모공 앰플
+15,코스알엑스,스킨케어,원스텝 오리지널 클리어 패드,17500,125,https://images.oliveyoung.co.kr/products/real_15.jpg,각질과 피지를 부드럽게 정돈하는 패드
+16,클리오,메이크업,킬커버 메쉬 글로우 쿠션 (본품+리필),34000,116,https://images.oliveyoung.co.kr/products/real_16.jpg,맑고 영롱한 광채를 선사하는 쿠션 밀착 밀착
+17,클리오,메이크업,프로 아이 팔레트 에어 01 코랄스튜디오,32000,27,https://images.oliveyoung.co.kr/products/real_17.jpg,매일 쓰기 좋은 데일리 음영 팔레트
+18,롬앤,메이크업,쥬시 래스팅 틴트 06 피그피그,13000,60,https://images.oliveyoung.co.kr/products/real_18.jpg,탕후루 광택의 원조 쥬시 래스팅 틴트
+19,롬앤,메이크업,블러 fudge 틴트 02 로지엔탈,13000,47,https://images.oliveyoung.co.kr/products/real_19.jpg,보송하게 밀착되는 무드 가득 블러 틴트
+20,페리페라,메이크업,잉크 더 벨벳 01 품절대란,10000,62,https://images.oliveyoung.co.kr/products/real_20.jpg,선명한 발색과 지속력을 자랑하는 틴트
+21,페리페라,메이크업,"올테이크 무드 팔레트 11 당근, 근데 이제 햇살을 담은",21000,144,https://images.oliveyoung.co.kr/products/real_21.jpg,가성비 최고 구성의 아이 팔레트
+22,투쿨포스쿨,메이크업,아트클래스 바이로댕 쉐딩 클래식,16000,123,https://images.oliveyoung.co.kr/products/real_22.jpg,"국민 쉐딩, 자연스러운 윤곽 메이크업"
+23,바닐라코,메이크업,클린 잇 제로 클렌징 밤 오리지널 100ml,18000,21,https://images.oliveyoung.co.kr/products/real_23.jpg,샤베트 제형의 완벽 밀착 클렌징 밤
+24,헤라,메이크업,블랙 쿠션 SPF34 (본품+리필),68000,92,https://images.oliveyoung.co.kr/products/real_24.jpg,"럭셔리 매트 쿠션의 정석, 뛰어난 커버력"
+25,정샘물,메이크업,에센셜 스킨 누더 쿠션 (본품+리필),42000,103,https://images.oliveyoung.co.kr/products/real_25.jpg,아티스트의 손길이 닿은 듯 투명한 피부 표현
+26,웨이크메이크,메이크업,워터 벨벳 커버 쿠션,28000,68,https://images.oliveyoung.co.kr/products/real_26.jpg,올리브영 자체 브랜드(PB) 강력 추천 쿠션
+27,웨이크메이크,메이크업,소프트 블러링 아이팔레트 02 생기블러링,34000,34,https://images.oliveyoung.co.kr/products/real_27.jpg,16가지 다채로운 컬러 레이어링
+28,데이지크,메이크업,섀도우 팔레트 03 누드포션,34000,58,https://images.oliveyoung.co.kr/products/real_28.jpg,감성 가득 9구 무드 아이섀도우 팔레트
+29,무지개맨션,메이크업,오브제 리퀴드 틴트,18000,94,https://images.oliveyoung.co.kr/products/real_29.jpg,독특한 오브제 디자인의 프리미엄 비건 틴트
+30,에스쁘아,메이크업,프로 테일러 비글로우 쿠션 올뉴,38000,139,https://images.oliveyoung.co.kr/products/real_30.jpg,생기 있고 가벼운 광채를 만들어주는 쿠션
+31,미장센,헤어케어,퍼펙트 오리지널 세럼 80ml 1+1,22000,29,https://images.oliveyoung.co.kr/products/real_31.jpg,손상된 모발을 매끄럽게 가꿔주는 헤어 세럼
+32,모레모,헤어케어,워터 트리트먼트 미라클 10 200ml,21000,75,https://images.oliveyoung.co.kr/products/real_32.jpg,10초 만에 흡수되어 물미역 모발을 만드는 트리트먼트
+33,어노브,헤어케어,딥 데미지 트리트먼트 EX 207ml 단품,22000,144,https://images.oliveyoung.co.kr/products/real_33.jpg,"단백질 집중 충전, 극손상모 전용 트리트먼트"
+34,랩오투원,헤어케어,탈모증상완화 샴푸 400ml,24000,137,https://images.oliveyoung.co.kr/products/real_34.jpg,두피 환경을 쾌적하게 개선해주는 탈모 샴푸
+35,닥터포헤어,헤어케어,폴리젠 샴푸 500ml,28000,101,https://images.oliveyoung.co.kr/products/real_35.jpg,두피 각질과 피지 관리에 뛰어난 탈모 프리미엄 샴푸
+36,일리윤,바디케어,세라마이드 아토 로션 350ml,19900,61,https://images.oliveyoung.co.kr/products/real_36.jpg,온 가족이 쓰는 저자극 고보습 바디 로션
+37,더바디샵,바디케어,화이트 머스크 바디 미스트 100ml,25000,81,https://images.oliveyoung.co.kr/products/real_37.jpg,은은하고 매혹적인 살냄새 가득 화이트 머스크
+38,세타필,바디케어,모이스춰라이징 로션 473ml,21000,68,https://images.oliveyoung.co.kr/products/real_38.jpg,민감하고 건조한 피부를 위한 저자극 보습 로션
+39,올리브영,미용소품,촉촉 퍼프 4개입,5000,26,https://images.oliveyoung.co.kr/products/real_39.jpg,물에 적셔 사용하는 촉촉 찰떡 메이크업 퍼프
+40,필리밀리,미용소품,V컷 파운데이션 브러시 822,15500,105,https://images.oliveyoung.co.kr/products/real_40.jpg,결 자국 없이 완벽하게 밀착되는 파운데이션 브러시
+41,올리브영픽,향수/디렉터,올리브영픽 퍼퓸드 핸드크림,15000,60,https://images.oliveyoung.co.kr/products/gen_41.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+42,닥터포헤어,바디케어,닥터포헤어 리페어 에센스 미스트,8000,169,https://images.oliveyoung.co.kr/products/gen_42.jpg,올리브영에서 가장 사랑받는 닥터포헤어 브랜드의 바디케어 추천 아이템입니다.
+43,일리윤,헤어케어,일리윤 소프트 코튼 화장솜,23000,129,https://images.oliveyoung.co.kr/products/gen_43.jpg,올리브영에서 가장 사랑받는 일리윤 브랜드의 헤어케어 추천 아이템입니다.
+44,올리브영픽,미용소품,올리브영픽 퍼퓸드 핸드크림,15000,83,https://images.oliveyoung.co.kr/products/gen_44.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+45,그로우어스,헤어케어,그로우어스 인텐시브 대용량 로션,23000,173,https://images.oliveyoung.co.kr/products/gen_45.jpg,올리브영에서 가장 사랑받는 그로우어스 브랜드의 헤어케어 추천 아이템입니다.
+46,올리브영픽,미용소품,올리브영픽 퍼퓸드 핸드크림,18000,177,https://images.oliveyoung.co.kr/products/gen_46.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+47,올리브영픽,향수/디렉터,올리브영픽 인텐시브 대용량 로션,15000,43,https://images.oliveyoung.co.kr/products/gen_47.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+48,에스트라,스킨케어,에스트라 모공 클렌징 폼 기획세트,22000,52,https://images.oliveyoung.co.kr/products/gen_48.jpg,올리브영에서 가장 사랑받는 에스트라 브랜드의 스킨케어 추천 아이템입니다.
+49,올리브영픽,향수/디렉터,올리브영픽 인텐시브 대용량 로션,12000,170,https://images.oliveyoung.co.kr/products/gen_49.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+50,올리브영픽,향수/디렉터,올리브영픽 퍼퓸드 핸드크림,18000,97,https://images.oliveyoung.co.kr/products/gen_50.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+51,웨이크메이크,메이크업,웨이크메이크 블러셔 치크,12000,38,https://images.oliveyoung.co.kr/products/gen_51.jpg,올리브영에서 가장 사랑받는 웨이크메이크 브랜드의 메이크업 추천 아이템입니다.
+52,일리윤,바디케어,일리윤 인텐시브 대용량 로션,8000,34,https://images.oliveyoung.co.kr/products/gen_52.jpg,올리브영에서 가장 사랑받는 일리윤 브랜드의 바디케어 추천 아이템입니다.
+53,올리브영픽,향수/디렉터,올리브영픽 딥 클린 브러시 가이드,18000,124,https://images.oliveyoung.co.kr/products/gen_53.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+54,미장센,바디케어,미장센 소프트 코튼 화장솜,23000,92,https://images.oliveyoung.co.kr/products/gen_54.jpg,올리브영에서 가장 사랑받는 미장센 브랜드의 바디케어 추천 아이템입니다.
+55,미장센,바디케어,미장센 소프트 코튼 화장솜,23000,182,https://images.oliveyoung.co.kr/products/gen_55.jpg,올리브영에서 가장 사랑받는 미장센 브랜드의 바디케어 추천 아이템입니다.
+56,세타필,헤어케어,세타필 소프트 코튼 화장솜,15000,136,https://images.oliveyoung.co.kr/products/gen_56.jpg,올리브영에서 가장 사랑받는 세타필 브랜드의 헤어케어 추천 아이템입니다.
+57,투쿨포스쿨,메이크업,투쿨포스쿨 롱스테이 아이라이너,16000,53,https://images.oliveyoung.co.kr/products/gen_57.jpg,올리브영에서 가장 사랑받는 투쿨포스쿨 브랜드의 메이크업 추천 아이템입니다.
+58,더바디샵,바디케어,더바디샵 퍼퓸드 핸드크림,15000,68,https://images.oliveyoung.co.kr/products/gen_58.jpg,올리브영에서 가장 사랑받는 더바디샵 브랜드의 바디케어 추천 아이템입니다.
+59,올리브영픽,미용소품,올리브영픽 리페어 에센스 미스트,18000,23,https://images.oliveyoung.co.kr/products/gen_59.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+60,피치씨,메이크업,피치씨 매트 리퀴드 립,16000,168,https://images.oliveyoung.co.kr/products/gen_60.jpg,올리브영에서 가장 사랑받는 피치씨 브랜드의 메이크업 추천 아이템입니다.
+61,바이오더마,스킨케어,바이오더마 릴리프 수딩 마스크 기획세트,28000,60,https://images.oliveyoung.co.kr/products/gen_61.jpg,올리브영에서 가장 사랑받는 바이오더마 브랜드의 스킨케어 추천 아이템입니다.
+62,올리브영픽,미용소품,올리브영픽 리페어 에센스 미스트,23000,70,https://images.oliveyoung.co.kr/products/gen_62.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+63,카밀,헤어케어,카밀 인텐시브 대용량 로션,8000,166,https://images.oliveyoung.co.kr/products/gen_63.jpg,올리브영에서 가장 사랑받는 카밀 브랜드의 헤어케어 추천 아이템입니다.
+64,올리브영픽,향수/디렉터,올리브영픽 퍼퓸드 핸드크림,12000,141,https://images.oliveyoung.co.kr/products/gen_64.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+65,닥터포헤어,헤어케어,닥터포헤어 소프트 코튼 화장솜,15000,68,https://images.oliveyoung.co.kr/products/gen_65.jpg,올리브영에서 가장 사랑받는 닥터포헤어 브랜드의 헤어케어 추천 아이템입니다.
+66,롬앤,메이크업,롬앤 워터 틴트 글로우,16000,134,https://images.oliveyoung.co.kr/products/gen_66.jpg,올리브영에서 가장 사랑받는 롬앤 브랜드의 메이크업 추천 아이템입니다.
+67,올리브영픽,향수/디렉터,올리브영픽 딥 클린 브러시 가이드,15000,134,https://images.oliveyoung.co.kr/products/gen_67.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+68,투쿨포스쿨,메이크업,투쿨포스쿨 블러셔 치크,25000,122,https://images.oliveyoung.co.kr/products/gen_68.jpg,올리브영에서 가장 사랑받는 투쿨포스쿨 브랜드의 메이크업 추천 아이템입니다.
+69,어노브,헤어케어,어노브 리페어 에센스 미스트,8000,148,https://images.oliveyoung.co.kr/products/gen_69.jpg,올리브영에서 가장 사랑받는 어노브 브랜드의 헤어케어 추천 아이템입니다.
+70,그로우어스,헤어케어,그로우어스 퍼퓸드 핸드크림,23000,73,https://images.oliveyoung.co.kr/products/gen_70.jpg,올리브영에서 가장 사랑받는 그로우어스 브랜드의 헤어케어 추천 아이템입니다.
+71,세타필,바디케어,세타필 인텐시브 대용량 로션,8000,158,https://images.oliveyoung.co.kr/products/gen_71.jpg,올리브영에서 가장 사랑받는 세타필 브랜드의 바디케어 추천 아이템입니다.
+72,브링그린,스킨케어,브링그린 비타민 토너 패드 기획세트,24000,155,https://images.oliveyoung.co.kr/products/gen_72.jpg,올리브영에서 가장 사랑받는 브링그린 브랜드의 스킨케어 추천 아이템입니다.
+73,올리브영픽,미용소품,올리브영픽 딥 클린 브러시 가이드,23000,129,https://images.oliveyoung.co.kr/products/gen_73.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+74,그로우어스,헤어케어,그로우어스 소프트 코튼 화장솜,15000,150,https://images.oliveyoung.co.kr/products/gen_74.jpg,올리브영에서 가장 사랑받는 그로우어스 브랜드의 헤어케어 추천 아이템입니다.
+75,바이오더마,스킨케어,바이오더마 모공 클렌징 폼 기획세트,22000,78,https://images.oliveyoung.co.kr/products/gen_75.jpg,올리브영에서 가장 사랑받는 바이오더마 브랜드의 스킨케어 추천 아이템입니다.
+76,페리페라,메이크업,페리페라 하이라이터 빔,19000,61,https://images.oliveyoung.co.kr/products/gen_76.jpg,올리브영에서 가장 사랑받는 페리페라 브랜드의 메이크업 추천 아이템입니다.
+77,올리브영픽,향수/디렉터,올리브영픽 인텐시브 대용량 로션,18000,134,https://images.oliveyoung.co.kr/products/gen_77.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+78,데이지크,메이크업,데이지크 워터 틴트 글로우,14000,123,https://images.oliveyoung.co.kr/products/gen_78.jpg,올리브영에서 가장 사랑받는 데이지크 브랜드의 메이크업 추천 아이템입니다.
+79,올리브영픽,향수/디렉터,올리브영픽 리페어 에센스 미스트,23000,88,https://images.oliveyoung.co.kr/products/gen_79.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+80,스킨푸드,스킨케어,스킨푸드 모공 클렌징 폼 기획세트,24000,69,https://images.oliveyoung.co.kr/products/gen_80.jpg,올리브영에서 가장 사랑받는 스킨푸드 브랜드의 스킨케어 추천 아이템입니다.
+81,롬앤,메이크업,롬앤 롱스테이 아이라이너,19000,97,https://images.oliveyoung.co.kr/products/gen_81.jpg,올리브영에서 가장 사랑받는 롬앤 브랜드의 메이크업 추천 아이템입니다.
+82,올리브영픽,향수/디렉터,올리브영픽 퍼퓸드 핸드크림,12000,174,https://images.oliveyoung.co.kr/products/gen_82.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+83,그로우어스,바디케어,그로우어스 인텐시브 대용량 로션,18000,155,https://images.oliveyoung.co.kr/products/gen_83.jpg,올리브영에서 가장 사랑받는 그로우어스 브랜드의 바디케어 추천 아이템입니다.
+84,에스쁘아,메이크업,에스쁘아 롱스테이 아이라이너,19000,197,https://images.oliveyoung.co.kr/products/gen_84.jpg,올리브영에서 가장 사랑받는 에스쁘아 브랜드의 메이크업 추천 아이템입니다.
+85,올리브영픽,미용소품,올리브영픽 딥 클린 브러시 가이드,23000,106,https://images.oliveyoung.co.kr/products/gen_85.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+86,올리브영픽,향수/디렉터,올리브영픽 인텐시브 대용량 로션,15000,190,https://images.oliveyoung.co.kr/products/gen_86.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+87,웨이크메이크,메이크업,웨이크메이크 블러셔 치크,12000,121,https://images.oliveyoung.co.kr/products/gen_87.jpg,올리브영에서 가장 사랑받는 웨이크메이크 브랜드의 메이크업 추천 아이템입니다.
+88,올리브영픽,미용소품,올리브영픽 퍼퓸드 핸드크림,15000,58,https://images.oliveyoung.co.kr/products/gen_88.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+89,데이지크,메이크업,데이지크 워터 틴트 글로우,12000,35,https://images.oliveyoung.co.kr/products/gen_89.jpg,올리브영에서 가장 사랑받는 데이지크 브랜드의 메이크업 추천 아이템입니다.
+90,올리브영픽,향수/디렉터,올리브영픽 인텐시브 대용량 로션,18000,95,https://images.oliveyoung.co.kr/products/gen_90.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+91,올리브영픽,향수/디렉터,올리브영픽 리페어 에센스 미스트,12000,176,https://images.oliveyoung.co.kr/products/gen_91.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+92,카밀,바디케어,카밀 딥 클린 브러시 가이드,8000,51,https://images.oliveyoung.co.kr/products/gen_92.jpg,올리브영에서 가장 사랑받는 카밀 브랜드의 바디케어 추천 아이템입니다.
+93,스킨푸드,스킨케어,스킨푸드 릴리프 수딩 마스크 기획세트,18000,188,https://images.oliveyoung.co.kr/products/gen_93.jpg,올리브영에서 가장 사랑받는 스킨푸드 브랜드의 스킨케어 추천 아이템입니다.
+94,올리브영픽,미용소품,올리브영픽 소프트 코튼 화장솜,23000,32,https://images.oliveyoung.co.kr/products/gen_94.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 미용소품 추천 아이템입니다.
+95,일리윤,바디케어,일리윤 소프트 코튼 화장솜,12000,195,https://images.oliveyoung.co.kr/products/gen_95.jpg,올리브영에서 가장 사랑받는 일리윤 브랜드의 바디케어 추천 아이템입니다.
+96,올리브영픽,향수/디렉터,올리브영픽 딥 클린 브러시 가이드,8000,119,https://images.oliveyoung.co.kr/products/gen_96.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+97,토리든,스킨케어,토리든 비타민 토너 패드 기획세트,28000,140,https://images.oliveyoung.co.kr/products/gen_97.jpg,올리브영에서 가장 사랑받는 토리든 브랜드의 스킨케어 추천 아이템입니다.
+98,올리브영픽,향수/디렉터,올리브영픽 리페어 에센스 미스트,12000,30,https://images.oliveyoung.co.kr/products/gen_98.jpg,올리브영에서 가장 사랑받는 올리브영픽 브랜드의 향수/디렉터 추천 아이템입니다.
+99,마녀공장,스킨케어,마녀공장 비타민 토너 패드 기획세트,24000,162,https://images.oliveyoung.co.kr/products/gen_99.jpg,올리브영에서 가장 사랑받는 마녀공장 브랜드의 스킨케어 추천 아이템입니다.
+100,세타필,바디케어,세타필 소프트 코튼 화장솜,18000,76,https://images.oliveyoung.co.kr/products/gen_100.jpg,올리브영에서 가장 사랑받는 세타필 브랜드의 바디케어 추천 아이템입니다.

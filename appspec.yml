@@ -1,0 +1,45 @@
+# AWS CodeDeploy 설정 파일 (EC2/온프레미스 배포)
+# CodeDeploy 에이전트가 이 파일을 읽어 아래 순서대로 배포를 진행합니다.
+#   1) 소스 파일을 files.destination 위치로 복사
+#   2) hooks 의 스크립트를 생명주기 순서대로 실행
+
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /home/ec2-user/app
+
+# 복사된 파일 소유자/권한
+permissions:
+  - object: /home/ec2-user/app
+    owner: ec2-user
+    group: ec2-user
+    mode: 755
+    type:
+      - directory
+
+hooks:
+  # 새 파일을 내려받기 직전 (기존 앱 정지는 ApplicationStop 에서)
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 300
+      runas: root
+
+  # 파일 복사 후: 의존성 설치
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 300
+      runas: ec2-user
+
+  # 앱 시작
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 120
+      runas: root
+
+  # 배포 시작 시 기존 앱 정지
+  ApplicationStop:
+    - location: scripts/application_stop.sh
+      timeout: 120
+      runas: root

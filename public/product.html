@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상품 상세 · OLIVE YOUNG</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <p style="margin-bottom:16px"><a href="/" class="brand">← 목록으로</a></p>
+    <div id="detail"></div>
+    <div class="msg" id="msg"></div>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script>
+    const id = new URLSearchParams(location.search).get('id');
+
+    async function loadDetail() {
+      const p = await api('/api/products/' + id);
+      document.getElementById('detail').innerHTML = `
+        <div class="detail">
+          <div>
+            <img src="${p.thumbnail_url}" alt="${p.name}" onerror="this.style.visibility='hidden'" />
+          </div>
+          <div>
+            <div class="brand">${p.brand_name}</div>
+            <h1>${p.name}</h1>
+            <div class="tag">${p.category_name}</div>
+            <p class="desc">${p.description || ''}</p>
+            <div class="price">${won(p.price)}</div>
+            <hr />
+            <div class="qty">
+              <span>수량</span>
+              <input type="number" id="qty" value="1" min="1" max="${p.stock_quantity}" />
+              <span style="color:var(--gray);font-size:13px">재고 ${p.stock_quantity}개</span>
+            </div>
+            <div class="detail-actions">
+              <button class="btn btn-outline" id="add-cart">장바구니</button>
+              <button class="btn btn-dark" id="buy-now">바로 구매</button>
+            </div>
+          </div>
+        </div>`;
+
+      document.getElementById('add-cart').addEventListener('click', addToCart);
+      document.getElementById('buy-now').addEventListener('click', buyNow);
+    }
+
+    function currentQty() {
+      return Math.max(1, Number(document.getElementById('qty').value) || 1);
+    }
+
+    async function ensureLogin() {
+      const me = await getMe();
+      if (!me) {
+        location.href = '/login.html';
+        return false;
+      }
+      return true;
+    }
+
+    async function addToCart() {
+      if (!(await ensureLogin())) return;
+      const msg = document.getElementById('msg');
+      try {
+        await api('/api/cart/items', {
+          method: 'POST',
+          body: { productId: Number(id), quantity: currentQty() },
+        });
+        msg.className = 'msg ok';
+        msg.textContent = '장바구니에 담았습니다. ';
+        const go = document.createElement('a');
+        go.href = '/cart.html'; go.textContent = '장바구니 보기'; go.className = 'link-strong';
+        msg.appendChild(go);
+      } catch (err) {
+        msg.className = 'msg error';
+        msg.textContent = err.message;
+      }
+    }
+
+    async function buyNow() {
+      if (!(await ensureLogin())) return;
+      const msg = document.getElementById('msg');
+      try {
+        const r = await api('/api/orders', {
+          method: 'POST',
+          body: { items: [{ productId: Number(id), quantity: currentQty() }] },
+        });
+        alert('주문이 완료되었습니다! 결제금액: ' + won(r.total));
+        location.href = '/orders.html';
+      } catch (err) {
+        msg.className = 'msg error';
+        msg.textContent = err.message;
+      }
+    }
+
+    loadDetail().catch((err) => {
+      document.getElementById('detail').innerHTML = '<p class="empty">' + err.message + '</p>';
+    });
+  </script>
+</body>
+</html>

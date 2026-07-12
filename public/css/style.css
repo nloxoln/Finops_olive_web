@@ -1,0 +1,197 @@
+:root {
+  --lime: #a3d139;
+  --lime-dark: #8bbf1f;
+  --dark: #1f1f1f;
+  --gray: #767676;
+  --line: #e6e6e6;
+  --bg: #f5f5f5;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Malgun Gothic', -apple-system, 'Apple SD Gothic Neo', sans-serif;
+  color: var(--dark);
+  background: #fff;
+  line-height: 1.5;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* 헤더 */
+header {
+  border-bottom: 1px solid var(--line);
+}
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+  padding: 10px 40px;
+  font-size: 13px;
+  color: var(--gray);
+  border-bottom: 1px solid var(--line);
+}
+.topbar a:hover { color: var(--dark); }
+.brandbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+}
+.logo {
+  font-size: 26px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+.search-box { display: flex; gap: 8px; }
+.search-box input {
+  width: 320px;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* 레이아웃 */
+.container { max-width: 1080px; margin: 0 auto; padding: 30px 20px; }
+.center-wrap {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+/* 버튼 */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-lime { background: var(--lime); color: #fff; width: 100%; }
+.btn-lime:hover { background: var(--lime-dark); }
+.btn-dark { background: var(--dark); color: #fff; width: 100%; }
+.btn-dark:hover { background: #000; }
+.btn-outline { background: #fff; border: 1px solid var(--line); }
+.btn-sm { padding: 6px 12px; font-size: 13px; }
+
+/* 폼 카드 */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.06);
+  padding: 40px;
+  width: 400px;
+}
+.card h1 { text-align: center; font-size: 24px; margin-bottom: 28px; letter-spacing: -.5px; }
+.field { margin-bottom: 12px; }
+.field input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 14px;
+}
+.field input:focus { outline: none; border-color: var(--lime); }
+.form-foot { text-align: center; margin-top: 18px; font-size: 13px; color: var(--gray); }
+.form-foot a { color: var(--lime-dark); font-weight: 600; }
+.msg { text-align: center; font-size: 13px; margin-top: 12px; min-height: 18px; }
+.msg.error { color: #e23; }
+.msg.ok { color: var(--lime-dark); }
+
+/* 섹션 */
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0 18px;
+}
+.section-title h2 { font-size: 22px; letter-spacing: -.5px; }
+
+/* 카테고리 탭 */
+.cats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.cats button {
+  padding: 8px 16px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.cats button.active { background: var(--dark); color: #fff; border-color: var(--dark); }
+
+/* 상품 그리드 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.product-card {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow .15s;
+  background: #fff;
+}
+.product-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+.product-card .thumb {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background: #f0f0f0 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><rect width="60" height="60" fill="%23f0f0f0"/><text x="30" y="34" font-size="10" fill="%23bbb" text-anchor="middle">no image</text></svg>') center/contain no-repeat;
+}
+.product-card .info { padding: 12px 14px 16px; }
+.product-card .brand { font-size: 12px; color: var(--gray); font-weight: 600; }
+.product-card .pname {
+  font-size: 14px; margin: 4px 0 8px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  min-height: 40px;
+}
+.product-card .price { font-size: 16px; font-weight: 800; }
+
+/* 상품 상세 */
+.detail { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.detail img { width: 100%; border-radius: 12px; background: #f0f0f0; }
+.detail .brand { color: var(--gray); font-weight: 600; margin-bottom: 6px; }
+.detail h1 { font-size: 24px; margin-bottom: 10px; letter-spacing: -.5px; }
+.detail .desc { color: var(--gray); margin-bottom: 16px; }
+.detail .tag { display: inline-block; background: var(--bg); padding: 4px 10px; border-radius: 4px; font-size: 12px; margin-bottom: 16px; }
+.detail .price { font-size: 28px; font-weight: 800; margin: 20px 0; }
+.detail hr { border: none; border-top: 1px solid var(--line); margin: 20px 0; }
+.qty { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+.qty input { width: 60px; padding: 8px; text-align: center; border: 1px solid var(--line); border-radius: 6px; }
+.detail-actions { display: flex; gap: 10px; }
+
+/* 장바구니 / 주문 테이블 */
+.list-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 120px 120px 60px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.list-row img { width: 70px; height: 70px; object-fit: cover; border-radius: 8px; background: #f0f0f0; }
+.list-row .brand { font-size: 12px; color: var(--gray); }
+.cart-summary {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 24px; padding-top: 20px; border-top: 2px solid var(--dark);
+}
+.cart-summary .total { font-size: 22px; font-weight: 800; }
+.cart-summary .total span { color: var(--lime-dark); }
+
+.order-card { border: 1px solid var(--line); border-radius: 10px; padding: 20px; margin-bottom: 16px; }
+.order-card .head { display: flex; justify-content: space-between; color: var(--gray); font-size: 13px; margin-bottom: 12px; }
+.badge { padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.badge.done { background: #eaf6d6; color: var(--lime-dark); }
+.badge.cancel { background: #f2f2f2; color: var(--gray); }
+
+.empty { text-align: center; color: var(--gray); padding: 60px 0; }
+.link-strong { color: var(--lime-dark); font-weight: 600; }

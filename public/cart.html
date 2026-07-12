@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>장바구니 · OLIVE YOUNG</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <div class="section-title"><h2>장바구니</h2></div>
+    <div id="cart-body"></div>
+    <div class="msg" id="msg"></div>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script>
+    async function load() {
+      const me = await getMe();
+      if (!me) { location.href = '/login.html'; return; }
+
+      const data = await api('/api/cart');
+      const body = document.getElementById('cart-body');
+
+      if (data.items.length === 0) {
+        body.innerHTML = `<p class="empty">장바구니가 비어 있습니다.<br/><a href="/" class="link-strong">쇼핑하러 가기</a></p>`;
+        return;
+      }
+
+      body.innerHTML = data.items.map((it) => `
+        <div class="list-row" data-id="${it.cart_item_id}">
+          <img src="${it.thumbnail_url}" onerror="this.style.visibility='hidden'" />
+          <div>
+            <div class="brand">${it.brand_name}</div>
+            <div><a href="/product.html?id=${it.product_id}">${it.name}</a></div>
+            <div style="color:var(--gray);font-size:13px">${won(it.price)}</div>
+          </div>
+          <div>
+            <input type="number" class="qty-input" value="${it.quantity}" min="1"
+                   style="width:64px;padding:6px;text-align:center;border:1px solid var(--line);border-radius:6px" />
+          </div>
+          <div style="font-weight:700">${won(it.subtotal)}</div>
+          <div><button class="btn btn-outline btn-sm remove-btn">삭제</button></div>
+        </div>`).join('') + `
+        <div class="cart-summary">
+          <button class="btn btn-outline" style="width:auto" onclick="location.href='/'">계속 쇼핑</button>
+          <div style="display:flex;align-items:center;gap:20px">
+            <div class="total">총 <span>${won(data.total)}</span></div>
+            <button class="btn btn-dark" style="width:auto" id="order-btn">주문하기</button>
+          </div>
+        </div>`;
+
+      // 수량 변경
+      body.querySelectorAll('.qty-input').forEach((input) => {
+        input.addEventListener('change', async () => {
+          const row = input.closest('.list-row');
+          const qty = Math.max(1, Number(input.value) || 1);
+          input.value = qty;
+          try {
+            await api('/api/cart/items/' + row.dataset.id, { method: 'PATCH', body: { quantity: qty } });
+            load();
+          } catch (err) { showMsg(err.message); }
+        });
+      });
+
+      // 삭제
+      body.querySelectorAll('.remove-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const row = btn.closest('.list-row');
+          try {
+            await api('/api/cart/items/' + row.dataset.id, { method: 'DELETE' });
+            load();
+          } catch (err) { showMsg(err.message); }
+        });
+      });
+
+      // 주문
+      document.getElementById('order-btn').addEventListener('click', async () => {
+        try {
+          const r = await api('/api/orders', { method: 'POST' });
+          alert('주문이 완료되었습니다! 결제금액: ' + won(r.total));
+          location.href = '/orders.html';
+        } catch (err) { showMsg(err.message); }
+      });
+    }
+
+    function showMsg(text) {
+      const msg = document.getElementById('msg');
+      msg.className = 'msg error';
+      msg.textContent = text;
+    }
+
+    load();
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLIVE YOUNG</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <div class="cats" id="cats"></div>
+    <div class="section-title">
+      <h2 id="list-title">전체 상품</h2>
+    </div>
+    <div class="grid" id="product-grid"></div>
+  </main>
+
+  <script src="/js/common.js"></script>
+  <script>
+    const params = new URLSearchParams(location.search);
+    const activeCategory = params.get('category');
+    const query = params.get('q');
+
+    async function loadCategories() {
+      const cats = await api('/api/products/categories');
+      const host = document.getElementById('cats');
+      const all = `<button class="${!activeCategory ? 'active' : ''}" data-cat="">전체</button>`;
+      host.innerHTML = all + cats.map((c) =>
+        `<button class="${activeCategory === c ? 'active' : ''}" data-cat="${c}">${c}</button>`
+      ).join('');
+      host.querySelectorAll('button').forEach((b) => {
+        b.addEventListener('click', () => {
+          const c = b.dataset.cat;
+          location.href = c ? `/?category=${encodeURIComponent(c)}` : '/';
+        });
+      });
+    }
+
+    async function loadProducts() {
+      let url = '/api/products';
+      const qs = [];
+      if (activeCategory) qs.push(`category=${encodeURIComponent(activeCategory)}`);
+      if (query) qs.push(`q=${encodeURIComponent(query)}`);
+      if (qs.length) url += '?' + qs.join('&');
+
+      const title = document.getElementById('list-title');
+      if (query) title.textContent = `"${query}" 검색 결과`;
+      else if (activeCategory) title.textContent = activeCategory;
+
+      const products = await api(url);
+      const grid = document.getElementById('product-grid');
+      if (products.length === 0) {
+        grid.innerHTML = '<p class="empty">상품이 없습니다.</p>';
+        return;
+      }
+      grid.innerHTML = products.map((p) => `
+        <div class="product-card" onclick="location.href='/product.html?id=${p.id}'">
+          <img class="thumb" src="${p.thumbnail_url}" alt="${p.name}"
+               onerror="this.removeAttribute('src')" />
+          <div class="info">
+            <div class="brand">${p.brand_name}</div>
+            <div class="pname">${p.name}</div>
+            <div class="price">${won(p.price)}</div>
+          </div>
+        </div>`).join('');
+    }
+
+    loadCategories();
+    loadProducts();
+  </script>
+</body>
+</html>
