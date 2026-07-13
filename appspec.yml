@@ -26,9 +26,12 @@ hooks:
       timeout: 300
       runas: root
 
-  # 파일 복사 후: 의존성 설치
+  # 파일 복사 후: 의존성 설치 + DB 초기화(최초 1회)
   AfterInstall:
     - location: scripts/after_install.sh
+      timeout: 300
+      runas: ec2-user
+    - location: scripts/init_db.sh
       timeout: 300
       runas: ec2-user
 
