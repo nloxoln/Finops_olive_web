@@ -9,7 +9,7 @@
 
 ---
 
-## 🏗️ 아키텍처
+## 아키텍처
 
 ```
 Dev ── push ──▶ GitHub ──▶ GitHub Actions ──▶ (S3 번들) ──▶ CodeDeploy
@@ -26,7 +26,7 @@ User ──▶ CloudFront ──▶ ALB ──▶ [ EC2: Node 앱(systemd) ] ─
 
 ---
 
-## 📁 폴더 구조
+## 폴더 구조
 
 ```
 oliveyoung/
@@ -63,7 +63,7 @@ oliveyoung/
 
 ---
 
-## 🚀 로컬 실행
+## 로컬 실행
 
 ```bash
 # 1) 의존성 설치
@@ -87,7 +87,7 @@ npm start
 
 ---
 
-## 🔐 인증 방식
+## 인증 방식
 
 세션 쿠키 기반입니다. 로그인 성공 시 `connect.sid` 쿠키가 발급되고, 보호된 API(`/api/cart`, `/api/orders`)는 이 세션을 확인합니다.
 
@@ -95,7 +95,7 @@ npm start
 
 ---
 
-## 📡 API 명세
+## API 명세
 
 Base URL: `/api` · 요청/응답 본문은 모두 `application/json`
 
@@ -176,7 +176,7 @@ GET /api/products/:id
 
 ---
 
-### 3. 장바구니 `/api/cart` 🔒 *로그인 필요*
+### 3. 장바구니 `/api/cart` *로그인 필요*
 
 #### 조회
 ```
@@ -210,7 +210,7 @@ DELETE /api/cart/items/:id
 
 ---
 
-### 4. 주문 `/api/orders` 🔒 *로그인 필요*
+### 4. 주문 `/api/orders` *로그인 필요*
 
 #### 주문 생성
 ```
@@ -236,7 +236,7 @@ GET /api/orders
 
 ---
 
-## ⚙️ 환경변수
+## 환경변수
 
 | 변수 | 설명 | 예시 |
 |---|---|---|
@@ -255,7 +255,7 @@ GET /api/orders
 
 ---
 
-## ☁️ 배포 흐름 (GitHub Actions → CodeDeploy → EC2)
+## 배포 흐름 (GitHub Actions → CodeDeploy → EC2)
 
 1. **GitHub Secrets 등록** (레포 Settings → Secrets and variables → Actions)
    - `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` — 배포 권한 IAM 사용자
