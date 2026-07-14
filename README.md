@@ -212,7 +212,7 @@ DELETE /api/cart/items/:id
 
 ### 4. 주문 `/api/orders` *로그인 필요*
 
-#### 주문 생성
+#### 주문 생성.
 ```
 POST /api/orders
 
