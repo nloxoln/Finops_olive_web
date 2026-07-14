@@ -271,4 +271,4 @@ GET /api/orders
    psql -h <RDS엔드포인트> -U postgres -d oliveyoung -f sql/load.sql
    ```
 
-------------
+--------------
